@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@1,500&display=swap');
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+    --w: white;
+    --b: black;
+}
+
+.change-main-theme-block {
+	height: 757px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: var(--w);
+}
+
+.change-content-block {
+    height: 757px;
+    width: 1000px;
+    margin-left: 300px;
+    background: var(--w);
+}
+
+.change-img-block {
+	height: 300px;
+	width: 1000px;
+	position: absolute;
+	top: 0;
+}
+
+.change-img {
+	max-height: 300px;
+	min-width: 1000px;
+}
+
+.text-content-block {
+	height: 300px;
+	width: 1000px;
+	position: absolute;
+	margin-left: 0;
+	margin-top: 350px;
+}
+
+.text-content {
+	font-size: 25px;
+    font-family: 'Kufam', cursive;
+    display: inline;
+    font-weight: 500;
+    top: 0;
+    left: 0;
+}
+
+.change-button-block {
+    height: 100px;
+    width: 100px;
+    border: 0;
+    background: var(--w);
+    border: 1px solid var(--b);
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    top: 600px;
+    left: 450px;
+    transition: .8s;
+    -o-transition: .8s;
+    -webkit-transition: .8s;
+    -moz-transition: .8s;
+}
+
+.fas {
+	font-size: 50px;
+	color: var(--b);
+	margin-left: 17.5px;
+	margin-top: 20px;
+	text-shadow: 0 0 10px var(--b);
+}
+
+.change-shadow {
+	filter: hue-rotate(0deg);
+}
+
+.change-img-shadow {
+	filter: invert(100%);
+}
+
+.change-theme {
+	filter: invert(100%) hue-rotate(180deg);
+}
