@@ -74,14 +74,16 @@ body {
 
 .fas {
 	font-size: 50px;
-	color: var(--b);
+	color: yellow;
 	margin-left: 17.5px;
 	margin-top: 20px;
-	text-shadow: 0 0 10px var(--b);
+	text-shadow: 0 0 10px yellow;
 }
 
 .change-shadow {
-	filter: hue-rotate(0deg);
+	/* filter: hue-rotate(0deg);  */
+	box-shadow: 0 0 15px var(--w);
+	background-color: var(--w);
 }
 
 .change-img-shadow {
@@ -89,5 +91,15 @@ body {
 }
 
 .change-theme {
-	filter: invert(100%) hue-rotate(180deg);
+	filter: invert(100%) hue-rotate(360deg);
+	transition: all 850ms !important;
+	transition-delay: 0 !important;
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+	transition: all 850ms !important;
+	transition-delay: 0 !important;
 }
